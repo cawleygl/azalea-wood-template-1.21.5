@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_custom_fence_gate_wall",
+  "textures": {
+    "particle": "azalea-wood:block/azalea_fence_gate_particle",
+    "texture": "azalea-wood:block/azalea_fence_gate"
+  }
+}

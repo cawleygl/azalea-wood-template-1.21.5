@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_uv_locked_z",
+  "textures": {
+    "end": "azalea-wood:block/stripped_azalea_block_top",
+    "side": "azalea-wood:block/stripped_azalea_block"
+  }
+}

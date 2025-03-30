@@ -1,0 +1,19 @@
+// 1.21.5	-999999999-01-01T00:00:00	Azalea Wood/Block Loot Tables
+7ead1c4cb623371f0b8bc7ecd9332a368b4dadf6 data/azalea-wood/loot_table/blocks/azalea_block.json
+e2ee31c0a0ee713690e76a43462434451c3197ec data/azalea-wood/loot_table/blocks/azalea_button.json
+d4bb6f5bcdc5456a8d078edc75b37615a18e6f35 data/azalea-wood/loot_table/blocks/azalea_door.json
+a5df3d1d3d4598a93f22f73e8ce6286fb35f1d83 data/azalea-wood/loot_table/blocks/azalea_fence.json
+b42f5f4587ee2580295f7cc50967a65b5067a726 data/azalea-wood/loot_table/blocks/azalea_fence_gate.json
+75f718797dd7e27eea7d23b164c6c73e4ed123e6 data/azalea-wood/loot_table/blocks/azalea_hanging_sign.json
+b24e25507bfef4db2db646ee5e488c987e5bd50f data/azalea-wood/loot_table/blocks/azalea_mosaic.json
+1b8f617b82fbc2c8ab39b113d9e76bea61e63218 data/azalea-wood/loot_table/blocks/azalea_mosaic_slab.json
+9eaa9c38568ffa51b674a56c6db28cae2f884ced data/azalea-wood/loot_table/blocks/azalea_mosaic_stairs.json
+c918470c16970e10a644af2c759754014209c45e data/azalea-wood/loot_table/blocks/azalea_planks.json
+a229ff3cb1ced6acb16324320833730bf9fdbd60 data/azalea-wood/loot_table/blocks/azalea_pressure_plate.json
+e734d23c57f48745a9f0dc0e233fe4c80f19b582 data/azalea-wood/loot_table/blocks/azalea_slab.json
+a4fe715ccbca0d5179cd3b9b37535a0427726bf2 data/azalea-wood/loot_table/blocks/azalea_stairs.json
+6ff54c33873d772aeb392e211b132e0e107af9cc data/azalea-wood/loot_table/blocks/azalea_standing_sign.json
+cbcb7852133398d272b1ab7952511a04a016d0ff data/azalea-wood/loot_table/blocks/azalea_stem.json
+ee17ea6a071f2b36c3b42e99ba25a8bccb0dd928 data/azalea-wood/loot_table/blocks/azalea_trapdoor.json
+88cd4b3f7a44cefb4bcbc18afde9a77e1506116d data/azalea-wood/loot_table/blocks/stripped_azalea_block.json
+658b92ede4f7adf321fa5dc42e8a6201be05124b data/azalea-wood/loot_table/blocks/stripped_azalea_stem.json

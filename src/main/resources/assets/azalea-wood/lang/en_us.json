@@ -1,0 +1,26 @@
+{
+  "block.azalea-wood.azalea_stem": "Azalea Stem",
+  "block.azalea-wood.stripped_azalea_stem": "Stripped Azalea Stem",
+
+  "item.azalea-wood.azalea_sign": "Azalea Sign",
+  "item.azalea-wood.azalea_hanging_sign": "Azalea Hanging Sign",
+  "item.azalea-wood.azalea_raft": "Azalea Raft",
+  "item.azalea-wood.azalea_chest_raft": "Azalea Raft with Chest",
+  "entity.azalea-wood.azalea_chest_raft": "Azalea Raft with Chest",
+
+  "block.azalea-wood.azalea_block": "Block of Azalea",
+  "block.azalea-wood.stripped_azalea_block": "Block of Stripped Azalea",
+
+  "block.azalea-wood.azalea_planks": "Azalea Planks",
+  "block.azalea-wood.azalea_mosaic": "Azalea Mosaic",
+  "block.azalea-wood.azalea_stairs": "Azalea Stairs",
+  "block.azalea-wood.azalea_mosaic_stairs": "Azalea Mosaic Stairs",
+  "block.azalea-wood.azalea_slab": "Azalea Slab",
+  "block.azalea-wood.azalea_mosaic_slab": "Azalea Mosaic Slab",
+  "block.azalea-wood.azalea_button": "Azalea Button",
+  "block.azalea-wood.azalea_pressure_plate": "Azalea Pressure Plate",
+  "block.azalea-wood.azalea_fence": "Azalea Fence",
+  "block.azalea-wood.azalea_fence_gate": "Azalea Fence Gate",
+  "block.azalea-wood.azalea_door": "Azalea Door",
+  "block.azalea-wood.azalea_trapdoor": "Azalea Trapdoor"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "azalea-wood:azalea_stem",
+    "azalea-wood:azalea_stem",
+    "azalea-wood:azalea_stem",
+    "azalea-wood:azalea_stem",
+    "azalea-wood:azalea_stem",
+    "azalea-wood:azalea_stem",
+    "azalea-wood:azalea_stem",
+    "azalea-wood:azalea_stem",
+    "azalea-wood:azalea_stem"
+  ],
+  "result": {
+    "count": 1,
+    "id": "azalea-wood:azalea_block"
+  }
+}

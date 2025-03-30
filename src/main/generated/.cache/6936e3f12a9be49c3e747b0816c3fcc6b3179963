@@ -1,0 +1,20 @@
+// 1.21.5	-999999999-01-01T00:00:00	Azalea Wood/Tags for minecraft:block
+439363ade3b1421d703aecab3c5141e313156bac data/azalea-wood/tags/block/azalea_blocks.json
+a226b4053ce8ec658d422794cfd7f6235aeeddb2 data/azalea-wood/tags/block/azalea_stems.json
+345bbd4c4332f35afccf3f37c119a234ad4e4eda data/minecraft/tags/block/ceiling_hanging_signs.json
+dde46f599144666bdeeafd5f4a1a6e07d6e74a09 data/minecraft/tags/block/fence_gates.json
+241a2d521897a4958998b9ab7842798fc10e2329 data/minecraft/tags/block/logs.json
+55ccfa7d3be4cded6387047199e76eb57a09dc15 data/minecraft/tags/block/mineable/axe.json
+e06f24dc14c8c1ce49de575a8098a544e85d4cf2 data/minecraft/tags/block/planks.json
+ad6e32dcea05a3d85543b67cebcbd0c88b414e41 data/minecraft/tags/block/slabs.json
+d62c8f299a95b604419df99c831c8370c67b9714 data/minecraft/tags/block/stairs.json
+b3bbd40f507c24f56855d39808dbac92c9e9fdaa data/minecraft/tags/block/standing_signs.json
+2012280f0f06bdba2ac1ee8f289cd0fe0b9711fa data/minecraft/tags/block/wall_hanging_signs.json
+468947d691c6fc28593e117120ff9f727c770185 data/minecraft/tags/block/wall_signs.json
+b7bc504378a5ad1d0bbe4515143db2cecbdf0141 data/minecraft/tags/block/wooden_buttons.json
+a290a8c694a7499da60e482d19d52d9962b9a1d7 data/minecraft/tags/block/wooden_doors.json
+36ce75b2f1e4d1f001a66640774d03732ab62c86 data/minecraft/tags/block/wooden_fences.json
+665835d913b677770631572433ea5962870aa3db data/minecraft/tags/block/wooden_pressure_plates.json
+77f9f1cd1e4ea6cec0b0a0bd493a63d09769e77e data/minecraft/tags/block/wooden_slabs.json
+1be398b9a0b26d458c6a0920bb07c5bf98beea96 data/minecraft/tags/block/wooden_stairs.json
+255eb268f0d3ad335f44e58aad426887f2d2db94 data/minecraft/tags/block/wooden_trapdoors.json
