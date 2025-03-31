@@ -44,6 +44,16 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.BAMBOO_WOOD)
                     .burnable()
     );
+    public static final Block POTTED_AZALEA_STEM = registerNonOpaqueBlock(
+            "potted_azalea_stem",
+            settings -> new FlowerPotBlock(ModBlocks.AZALEA_STEM, settings),
+            Blocks.createFlowerPotSettings()
+    );
+    public static final Block POTTED_STRIPPED_AZALEA_STEM = registerNonOpaqueBlock(
+            "potted_stripped_azalea_stem",
+            settings -> new FlowerPotBlock(ModBlocks.STRIPPED_AZALEA_STEM, settings),
+            Blocks.createFlowerPotSettings()
+    );
 
     public static final Block AZALEA_BLOCK = registerBlock(
             "azalea_block",

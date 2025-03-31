@@ -46,5 +46,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALL_SIGNS).add(ModBlocks.AZALEA_WALL_SIGN);
         getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS).add(ModBlocks.AZALEA_HANGING_SIGN);
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS).add(ModBlocks.AZALEA_WALL_HANGING_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.FLOWER_POTS).add(ModBlocks.POTTED_AZALEA_STEM);
+        getOrCreateTagBuilder(BlockTags.FLOWER_POTS).add(ModBlocks.POTTED_STRIPPED_AZALEA_STEM);
     }
 }

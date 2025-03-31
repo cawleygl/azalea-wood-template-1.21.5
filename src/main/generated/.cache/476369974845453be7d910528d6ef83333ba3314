@@ -15,5 +15,7 @@ a4fe715ccbca0d5179cd3b9b37535a0427726bf2 data/azalea-wood/loot_table/blocks/azal
 6ff54c33873d772aeb392e211b132e0e107af9cc data/azalea-wood/loot_table/blocks/azalea_standing_sign.json
 cbcb7852133398d272b1ab7952511a04a016d0ff data/azalea-wood/loot_table/blocks/azalea_stem.json
 ee17ea6a071f2b36c3b42e99ba25a8bccb0dd928 data/azalea-wood/loot_table/blocks/azalea_trapdoor.json
+a0db1f6c9588ec34945681e59cb0fdcc182f02b1 data/azalea-wood/loot_table/blocks/potted_azalea_stem.json
+7b54cefe823c802ee9e7f94acb5b754e810b85cc data/azalea-wood/loot_table/blocks/potted_stripped_azalea_stem.json
 88cd4b3f7a44cefb4bcbc18afde9a77e1506116d data/azalea-wood/loot_table/blocks/stripped_azalea_block.json
 658b92ede4f7adf321fa5dc42e8a6201be05124b data/azalea-wood/loot_table/blocks/stripped_azalea_stem.json

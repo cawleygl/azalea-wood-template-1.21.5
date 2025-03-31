@@ -37,5 +37,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AZALEA_WALL_SIGN);
         addDrop(ModBlocks.AZALEA_HANGING_SIGN);
         addDrop(ModBlocks.AZALEA_WALL_HANGING_SIGN);
+
+        addDrop(ModBlocks.POTTED_AZALEA_STEM, pottedPlantDrops(ModBlocks.AZALEA_STEM));
+        addDrop(ModBlocks.POTTED_STRIPPED_AZALEA_STEM, pottedPlantDrops(ModBlocks.STRIPPED_AZALEA_STEM));
     }
 }

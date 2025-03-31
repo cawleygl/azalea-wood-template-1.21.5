@@ -28,6 +28,9 @@ public class ModModelProvider extends FabricModelProvider {
         // Signs Textures
         azaleaPlankPool.family(ModBlocks.AZALEA_SIGN_FAMILY);
         azaleaPlankPool.family(ModBlocks.AZALEA_HANGING_SIGN_FAMILY);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.AZALEA_STEM, ModBlocks.POTTED_AZALEA_STEM, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.STRIPPED_AZALEA_STEM, ModBlocks.POTTED_STRIPPED_AZALEA_STEM, BlockStateModelGenerator.CrossType.NOT_TINTED);
     }
 
     @Override
