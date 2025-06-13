@@ -16,11 +16,13 @@ import net.minecraft.village.VillagerProfession;
 public class ModRegistries {
     public static void registerStrippables() {
         StrippableBlockRegistry.register(ModBlocks.AZALEA_STEM, ModBlocks.STRIPPED_AZALEA_STEM);
+        StrippableBlockRegistry.register(ModBlocks.LEAFY_AZALEA_STEM, ModBlocks.STRIPPED_AZALEA_STEM);
         StrippableBlockRegistry.register(ModBlocks.AZALEA_BLOCK, ModBlocks.STRIPPED_AZALEA_BLOCK);
     }
 
     public static void registerFlammables() {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.AZALEA_STEM, 60, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LEAFY_AZALEA_STEM, 60, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_AZALEA_STEM, 60, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.AZALEA_PLANKS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.AZALEA_MOSAIC, 5, 20);
@@ -37,6 +39,7 @@ public class ModRegistries {
     public static void registerFuels() {
         FuelRegistryEvents.BUILD.register((builder, context) -> {
             builder.add(ModBlocks.AZALEA_STEM, 50);
+            builder.add(ModBlocks.LEAFY_AZALEA_STEM, 50);
             builder.add(ModBlocks.STRIPPED_AZALEA_STEM, 50);
             builder.add(ModTags.Items.AZALEA_BLOCKS, 300);
             builder.add(ModBlocks.AZALEA_MOSAIC, 300);

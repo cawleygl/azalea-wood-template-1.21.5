@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/template_custom_fence_gate_wall_open",
   "textures": {
-    "particle": "azalea-wood:block/azalea_fence_gate_particle",
+    "particle": "azalea-wood:block/azalea_planks",
     "texture": "azalea-wood:block/azalea_fence_gate"
   }
 }

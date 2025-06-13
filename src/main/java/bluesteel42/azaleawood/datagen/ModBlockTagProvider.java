@@ -18,6 +18,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Blocks.AZALEA_STEMS)
                 .add(ModBlocks.AZALEA_STEM)
+                .add(ModBlocks.LEAFY_AZALEA_STEM)
                 .add(ModBlocks.STRIPPED_AZALEA_STEM);
         getOrCreateTagBuilder(BlockTags.LOGS).addTag(ModTags.Blocks.AZALEA_STEMS);
 

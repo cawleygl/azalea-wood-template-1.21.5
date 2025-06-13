@@ -20,6 +20,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.AZALEA_STEMS)
                 .add(ModBlocks.AZALEA_STEM.asItem())
+                .add(ModBlocks.LEAFY_AZALEA_STEM.asItem())
                 .add(ModBlocks.STRIPPED_AZALEA_STEM.asItem());
         getOrCreateTagBuilder(ItemTags.LOGS).addTag(ModTags.Items.AZALEA_STEMS);
 

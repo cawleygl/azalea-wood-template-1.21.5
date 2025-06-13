@@ -1,0 +1,70 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"leaves": "minecraft:block/azalea_leaves",
+    	"stem": "minecraft:block/oak_log",
+		"stem_top": "azalea-wood:block/azalea_stem_top",
+		"particle": "minecraft:block/azalea_leaves"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [11, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 4]},
+			"faces": {
+				"north": {"uv": [3, 0, 9, 16], "texture": "#stem"},
+				"east": {"uv": [7, 0, 13, 16], "texture": "#stem"},
+				"south": {"uv": [10, 0, 16, 16], "texture": "#stem"},
+				"west": {"uv": [0, 0, 6, 16], "texture": "#stem"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 0]},
+			"faces": {
+				"down": {"uv": [0, 0, 16, 16], "texture": "#stem_top"}
+			}
+		},
+		{
+			"from": [0, 16, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 0]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#stem_top"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [0, 16, 16],
+			"faces": {
+				"west": {"uv": [0, 0, 16, 16], "texture": "#leaves"}
+			}
+		},
+		{
+			"from": [0, 0, 16],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 0]},
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#leaves"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#leaves"}
+			}
+		},
+		{
+			"from": [16, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#leaves"}
+			}
+		}
+	]
+}

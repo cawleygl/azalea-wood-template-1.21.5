@@ -3,7 +3,7 @@
 	"package": "bluesteel42.azaleawood.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+      "ShearLeafyAzaleaStemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -15,6 +15,8 @@ import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
+import net.minecraft.particle.EntityEffectParticleEffect;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
@@ -32,6 +34,19 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(1.0F)
                     .sounds(BlockSoundGroup.BAMBOO_WOOD)
+                    .burnable()
+    );
+    public static final Block LEAFY_AZALEA_STEM = registerNonOpaqueBlock(
+            "leafy_azalea_stem",
+            settings -> new LeafyAzaleaStemBlock(0.01F, EntityEffectParticleEffect.create(ParticleTypes.TINTED_LEAVES, -9399763), settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(1.0F)
+                    .sounds(BlockSoundGroup.BAMBOO_WOOD)
+                    .suffocates(Blocks::never)
+                    .blockVision(Blocks::never)
+                    .nonOpaque()
                     .burnable()
     );
     public static final Block STRIPPED_AZALEA_STEM = registerBlock(
@@ -281,6 +296,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> {
                     itemGroup.addAfter(Items.BAMBOO, ModBlocks.STRIPPED_AZALEA_STEM);
+                    itemGroup.addAfter(Items.BAMBOO, ModBlocks.LEAFY_AZALEA_STEM);
                     itemGroup.addAfter(Items.BAMBOO, ModBlocks.AZALEA_STEM);
                 });
 
