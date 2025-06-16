@@ -1,7 +1,7 @@
 {
-  "parent": "azalea-wood:block/template_azalea_stem",
+  "parent": "azalea-wood:block/template_azalea_stem_post",
   "textures": {
-    "stem": "minecraft:block/oak_log",
+    "stem": "azalea-wood:block/azalea_stem",
     "stem_top": "azalea-wood:block/azalea_stem_top"
   }
 }

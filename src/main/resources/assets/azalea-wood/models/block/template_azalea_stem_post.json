@@ -8,12 +8,11 @@
 		{
 			"from": [5, 0, 5],
 			"to": [11, 16, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [4, 0, 4]},
 			"faces": {
-				"north": {"uv": [3, 0, 9, 16], "texture": "#stem"},
-				"east": {"uv": [7, 0, 13, 16], "texture": "#stem"},
-				"south": {"uv": [10, 0, 16, 16], "texture": "#stem"},
-				"west": {"uv": [0, 0, 6, 16], "texture": "#stem"},
+				"north": {"uv": [4, 0, 10, 16], "texture": "#stem"},
+				"east": {"uv": [6, 0, 12, 16], "texture": "#stem"},
+				"south": {"uv": [8, 0, 14, 16], "texture": "#stem"},
+				"west": {"uv": [2, 0, 8, 16], "texture": "#stem"},
 				"up": {"uv": [5, 5, 11, 11], "texture": "#stem_top"},
 				"down": {"uv": [5, 5, 11, 11], "texture": "#stem_top"}
 			}

@@ -1,11 +1,13 @@
 {
-	"required": true,
-	"package": "bluesteel42.azaleawood.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-      "ShearLeafyAzaleaStemMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "bluesteel42.azaleawood.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ShearLeafyAzaleaStemMixin",
+    "StripBlockStateMixin",
+    "STRIPPED_BLOCKSAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

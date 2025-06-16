@@ -34,6 +34,7 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.BASS)
                     .strength(1.0F)
                     .sounds(BlockSoundGroup.BAMBOO_WOOD)
+                    .nonOpaque()
                     .burnable()
     );
     public static final Block LEAFY_AZALEA_STEM = registerNonOpaqueBlock(

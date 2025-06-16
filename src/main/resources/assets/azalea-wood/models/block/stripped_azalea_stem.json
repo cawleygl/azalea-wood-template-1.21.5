@@ -1,5 +1,5 @@
 {
-  "parent": "azalea-wood:block/template_azalea_stem",
+  "parent": "azalea-wood:block/template_azalea_stem_post",
   "textures": {
     "stem": "azalea-wood:block/stripped_azalea_stem",
     "stem_top": "azalea-wood:block/stripped_azalea_stem_top"

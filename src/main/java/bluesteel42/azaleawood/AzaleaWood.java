@@ -4,6 +4,7 @@ import bluesteel42.azaleawood.block.ModBlocks;
 import bluesteel42.azaleawood.entity.ModBoats;
 import bluesteel42.azaleawood.item.ModItems;
 import bluesteel42.azaleawood.registries.ModRegistries;
+import bluesteel42.azaleawood.world.tree.ModTreeBuilders;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +25,7 @@ public class AzaleaWood implements ModInitializer {
 		ModBlocks.initialize();
 		ModItems.initialize();
 		ModBoats.initialize();
+		ModTreeBuilders.initialize();
 		ModRegistries.registerStrippables();
 		ModRegistries.registerFlammables();
 		ModRegistries.registerFuels();

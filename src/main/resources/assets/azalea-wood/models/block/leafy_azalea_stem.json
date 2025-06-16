@@ -3,9 +3,9 @@
 	"parent": "minecraft:block/block",
 	"textures": {
 		"leaves": "minecraft:block/azalea_leaves",
-    	"stem": "minecraft:block/oak_log",
+		"stem": "azalea-wood:block/azalea_stem",
 		"stem_top": "azalea-wood:block/azalea_stem_top",
-		"particle": "minecraft:block/azalea_leaves"
+		"particle": "azalea-wood:block/azalea_stem"
 	},
 	"elements": [
 		{

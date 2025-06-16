@@ -1,5 +1,7 @@
 package bluesteel42.azaleawood.block;
 
+import com.google.common.collect.ImmutableMap;
+import com.google.common.collect.Maps;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.*;
@@ -12,6 +14,7 @@ import net.minecraft.particle.ParticleUtil;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.state.property.Property;
 import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -24,7 +27,18 @@ import net.minecraft.world.WorldView;
 import net.minecraft.world.tick.ScheduledTickView;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Map;
+
 public class LeafyAzaleaStemBlock extends PillarBlock implements Waterloggable {
+    public static final BooleanProperty NORTH = ConnectingBlock.NORTH;
+    public static final BooleanProperty EAST = ConnectingBlock.EAST;
+    public static final BooleanProperty SOUTH = ConnectingBlock.SOUTH;
+    public static final BooleanProperty WEST = ConnectingBlock.WEST;
+    public static final BooleanProperty UP = ConnectingBlock.UP;
+    public static final BooleanProperty DOWN = ConnectingBlock.DOWN;
+    public static final Map<Direction, BooleanProperty> FACING_PROPERTIES = ImmutableMap.copyOf(
+            Maps.newEnumMap(Map.of(Direction.NORTH, NORTH, Direction.EAST, EAST, Direction.SOUTH, SOUTH, Direction.WEST, WEST, Direction.UP, UP, Direction.DOWN, DOWN))
+    );
     public static final MapCodec<LeafyAzaleaStemBlock> CODEC = RecordCodecBuilder.mapCodec(
             instance -> instance.group(
                             Codecs.rangedInclusiveFloat(0.0F, 1.0F)
@@ -39,16 +53,25 @@ public class LeafyAzaleaStemBlock extends PillarBlock implements Waterloggable {
     protected final ParticleEffect leafParticleEffect;
     protected final float leafParticleChance;
 
+    @Override
+    public MapCodec<LeafyAzaleaStemBlock> getCodec() {
+        return CODEC;
+    }
+
     public LeafyAzaleaStemBlock(float leafParticleChance, ParticleEffect leafParticleEffect, Settings settings) {
         super(settings);
         this.leafParticleChance = leafParticleChance;
         this.leafParticleEffect = leafParticleEffect;
-        this.setDefaultState(this.stateManager.getDefaultState().with(AXIS, Direction.Axis.Y).with(WATERLOGGED, false));
-    }
-
-    @Override
-    public MapCodec<LeafyAzaleaStemBlock> getCodec() {
-        return CODEC;
+        this.setDefaultState(
+                this.getDefaultState()
+                        .with(NORTH, false)
+                        .with(EAST, false)
+                        .with(SOUTH, false)
+                        .with(WEST, false)
+                        .with(UP, false)
+                        .with(DOWN, false)
+                        .with(WATERLOGGED, false)
+        );
     }
 
     @Override
@@ -59,11 +82,6 @@ public class LeafyAzaleaStemBlock extends PillarBlock implements Waterloggable {
     @Override
     protected int getOpacity(BlockState state) {
         return 1;
-    }
-
-    @Override
-    protected FluidState getFluidState(BlockState state) {
-        return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
 
     @Override
@@ -97,11 +115,36 @@ public class LeafyAzaleaStemBlock extends PillarBlock implements Waterloggable {
         ParticleUtil.spawnParticle(world, pos, random, this.leafParticleEffect);
     }
 
+    public boolean canConnect(BlockState state) {
+        return state.isOf(ModBlocks.AZALEA_STEM) || state.isOf(ModBlocks.LEAFY_AZALEA_STEM) || state.isOf(ModBlocks.STRIPPED_AZALEA_STEM) ;
+    }
+
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
+        BlockView blockView = ctx.getWorld();
+        BlockPos blockPos = ctx.getBlockPos();
         FluidState fluidState = ctx.getWorld().getFluidState(ctx.getBlockPos());
-        return this.getDefaultState().with(WATERLOGGED, fluidState.isOf(Fluids.WATER)).with(AXIS, ctx.getSide().getAxis());
+        BlockPos blockPos2 = blockPos.north();
+        BlockPos blockPos3 = blockPos.east();
+        BlockPos blockPos4 = blockPos.south();
+        BlockPos blockPos5 = blockPos.west();
+        BlockPos blockPos6 = blockPos.up();
+        BlockPos blockPos7 = blockPos.down();
+        BlockState blockState = blockView.getBlockState(blockPos2);
+        BlockState blockState2 = blockView.getBlockState(blockPos3);
+        BlockState blockState3 = blockView.getBlockState(blockPos4);
+        BlockState blockState4 = blockView.getBlockState(blockPos5);
+        BlockState blockState5 = blockView.getBlockState(blockPos6);
+        BlockState blockState6 = blockView.getBlockState(blockPos7);
+        return super.getPlacementState(ctx)
+                .with(NORTH, this.canConnect(blockState))
+                .with(EAST, this.canConnect(blockState2))
+                .with(SOUTH, this.canConnect(blockState3))
+                .with(WEST, this.canConnect(blockState4))
+                .with(UP, this.canConnect(blockState5))
+                .with(DOWN, this.canConnect(blockState6))
+                .with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
     }
 
     @Override
@@ -119,13 +162,20 @@ public class LeafyAzaleaStemBlock extends PillarBlock implements Waterloggable {
             tickView.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
         }
 
-        return super.getStateForNeighborUpdate(state, world, tickView, pos, direction, neighborPos, neighborState, random);
+        return state.with(
+                (Property)FACING_PROPERTIES.get(direction),
+                this.canConnect(neighborState)
+        );
     }
 
+    @Override
+    protected FluidState getFluidState(BlockState state) {
+        return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
+    }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(AXIS, WATERLOGGED);
+        builder.add(NORTH, SOUTH, EAST, WEST, UP, DOWN, AXIS, WATERLOGGED);
     }
 
 }

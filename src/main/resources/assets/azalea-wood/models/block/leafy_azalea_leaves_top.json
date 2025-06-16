@@ -1,0 +1,7 @@
+{
+  "parent": "azalea-wood:block/template_leafy_azalea_leaves_side",
+  "textures": {
+    "leaves": "azalea-wood:block/azalea_stem_top",
+    "particle": "azalea-wood:block/azalea_stem"
+  }
+}

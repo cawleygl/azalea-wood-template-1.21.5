@@ -1,16 +1,296 @@
 {
-  "variants": {
-    "axis=x": {
-      "model": "azalea-wood:block/leafy_azalea_stem",
-      "x": 90,
-      "y": 90
+  "multipart": [
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_top"
+      },
+      "when": {
+        "axis": "z"
+      }
     },
-    "axis=y": {
-      "model": "azalea-wood:block/leafy_azalea_stem"
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_top",
+        "y": 180
+      },
+      "when": {
+        "axis": "z"
+      }
     },
-    "axis=z": {
-      "model": "azalea-wood:block/leafy_azalea_stem",
-      "x": 90
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "y": 90
+      },
+      "when": {
+        "axis": "z"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "y": 270
+      },
+      "when": {
+        "axis": "z"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "x": 90
+      },
+      "when": {
+        "axis": "z"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "x": 270
+      },
+      "when": {
+        "axis": "z"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side"
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "y": 180
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_top",
+        "y": 90
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_top",
+        "y": 270
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "x": 90
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "x": 270
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side"
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "y": 180
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "y": 90
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_side",
+        "y": 270
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_top",
+        "x": 90
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_leaves_top",
+        "x": 270
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/azalea_stem_center"
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/azalea_stem_center",
+        "x": 90
+      },
+      "when": {
+        "axis": "z"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/azalea_stem_center",
+        "y": 90,
+        "x": 90
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side"
+      },
+      "when": {
+        "axis": "z"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side"
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "y": 180
+      },
+      "when": {
+        "axis": "z"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "y": 180
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "y": 90
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "y": 270
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "y": 270
+      },
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "x": 90
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "x": 90
+      },
+      "when": {
+        "down": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "x": 270
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "azalea-wood:block/leafy_azalea_stem_side",
+        "x": 270
+      },
+      "when": {
+        "up": "true"
+      }
     }
-  }
+  ]
 }

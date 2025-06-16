@@ -51,7 +51,7 @@
       "upper_size": 1
     },
     "trunk_placer": {
-      "type": "minecraft:bending_trunk_placer",
+      "type": "azalea-wood:azalea_trunk_placer",
       "base_height": 4,
       "bend_length": {
         "type": "minecraft:uniform",
